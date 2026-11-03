@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PublicArcade | Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">🎮 Public<span>Arcade</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="explorar.html">Explorar juegos</a></li>
+        <li class="nav-item"><a class="nav-link" href="publicar.html">Publicar juego</a></li>
+        <li class="nav-item"><a class="nav-link" href="registro.html">Registrarse</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Iniciar sesión</a></li>
+        <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de</a></li>
+      </ul></div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">DESCUBRE · COMPARTE · JUEGA</p>
+      <h1>Tu próximo juego favorito<br><span>está aquí.</span></h1>
+      <p class="lead">Una comunidad para descubrir videojuegos independientes y compartir tus propias creaciones.</p>
+      <a class="btn btn-primary btn-lg me-2" href="explorar.html">Explorar juegos</a>
+      <a class="btn btn-outline-light btn-lg" href="publicar.html">Publicar un juego</a>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-3">
+      <div><p class="eyebrow mb-1">LA COMUNIDAD</p><h2>Juegos recientes</h2></div>
+      <a href="explorar.html" class="text-link">Ver catálogo →</a>
+    </div>
+    <div id="juegosInicio" class="row g-4"></div>
+
+    <section class="feature-panel mt-5">
+      <div><p class="eyebrow">¿ERES DESARROLLADOR?</p><h2>Comparte lo que has creado.</h2>
+      <p>Publica la información de tu videojuego, agrega una imagen y comparte el enlace donde se puede jugar.</p>
+      <a href="publicar.html" class="btn btn-primary">Comenzar a publicar</a></div>
+      <div class="feature-icon">🕹️</div>
+    </section>
+
+    <section class="row g-4 mt-4">
+      <div class="col-lg-6"><div class="info-card h-100"><p class="eyebrow">HOY EN PUBLICARCADE</p><h3>Fecha actual</h3><p id="fecha" class="date-display">Cargando fecha...</p></div></div>
+      <div class="col-lg-6"><div class="info-card"><p class="eyebrow">HERRAMIENTA</p><h3>Calculadora rápida</h3>
+        <div class="calculator">
+          <input id="calcA" type="number" class="form-control" placeholder="Primer número">
+          <select id="operacion" class="form-select"><option value="+">Sumar (+)</option><option value="-">Restar (−)</option><option value="*">Multiplicar (×)</option><option value="/">Dividir (÷)</option></select>
+          <input id="calcB" type="number" class="form-control" placeholder="Segundo número">
+          <button id="calcular" class="btn btn-primary w-100">Calcular</button>
+          <p id="resultado" class="calc-result" aria-live="polite">Resultado: —</p>
+        </div></div></div>
+    </section>
+  </main>
+  <footer><div class="container d-flex flex-wrap justify-content-between gap-2"><span>© 2026 PublicArcade</span><span>Una comunidad para compartir videojuegos.</span></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/comun.js"></script><script src="js/calculadora.js"></script><script src="js/inicio.js"></script>
+</body></html>
