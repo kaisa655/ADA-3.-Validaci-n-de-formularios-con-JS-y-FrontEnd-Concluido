@@ -62,13 +62,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión | TechStore</title>
+    <title>Iniciar sesión | PublicArcade</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
 <header class="encabezado">
-    <h1>TechStore</h1>
+    <h1>PublicArcade</h1>
 
     <nav>
         <a href="index.php">Inicio</a>
@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     <section class="bienvenida">
         <h2>Iniciar sesión</h2>
-        <p>Ingresa tus datos para acceder a TechStore.</p>
+        <p>Ingresa tus datos para acceder a PublicArcade.</p>
 
         <?php if ($mensaje !== ""): ?>
             <p class="mensaje-error">
