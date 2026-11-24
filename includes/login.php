@@ -116,9 +116,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 </main>
 
-<footer>
-    <p>TechStore - ADA5</p>
-</footer>
-
 </body>
 </html>
