@@ -1,24 +1,11 @@
-PUBLICARCADE - FRONTEND DEMOSTRATIVO
+PUBLICARCADE - INSTALACIÓN RÁPIDA
 
-Cómo abrir el proyecto en Visual Studio Code:
-1. Descarga y extrae PublicArcade.zip.
-2. Abre Visual Studio Code.
-3. Selecciona Archivo > Abrir carpeta y elige la carpeta PublicArcade.
-4. Abre index.html. Recomendado: instala la extensión Live Server y pulsa "Go Live".
-5. También puedes abrir index.html directamente en el navegador, aunque Live Server facilita las pruebas.
+1. Copia la carpeta PublicArcade en C:\xampp\htdocs\
+2. Inicia Apache y MySQL en XAMPP.
+3. Entra a http://localhost/phpmyadmin
+4. Importa database.sql.
+5. Revisa includes/config.php (en XAMPP normalmente root y contraseña vacía).
+6. Abre http://localhost/PublicArcade/
 
-Páginas:
-- index.html: inicio, fecha actual y calculadora.
-- explorar.html: catálogo con búsqueda y filtro.
-- publicar.html: formulario para publicar un juego.
-- registro.html: validación de registro.
-- login.html: validación de inicio de sesión.
-- acerca.html: descripción del proyecto.
-
-Tecnologías:
-- HTML5, CSS3 y JavaScript.
-- Bootstrap 5.3 por CDN (requiere conexión a Internet para cargar Bootstrap).
-- localStorage para guardar temporalmente los juegos en el mismo navegador.
-
-IMPORTANTE:
-Esta entrega es un prototipo FrontEnd. Los juegos se agregan al catálogo local del navegador y no se suben a un servidor. La imagen de portada se guarda como dato local, con límite de 1 MB. El formulario de registro y el inicio de sesión solo demuestran validaciones: no existe autenticación real. No uses contraseñas reales. Para producción se necesita backend, base de datos, almacenamiento seguro de archivos y autenticación segura.
+Todas las páginas del sitio son PHP. Se conserva css/estilos.css del diseño original.
+No abras index.php mediante file:///; usa localhost.
