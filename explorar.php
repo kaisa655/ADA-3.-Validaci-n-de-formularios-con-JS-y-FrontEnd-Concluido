@@ -7,7 +7,7 @@ if($busqueda!==''){ $sql.=" AND (j.titulo LIKE ? OR j.descripcion LIKE ?)"; $lik
 if($categoria!==''){ $sql.=" AND j.categoria=?";$params[]=$categoria;$tipos.='s'; }
 $sql.=" ORDER BY j.fecha_publicacion DESC";
 $q=$conexion->prepare($sql); if($params)$q->bind_param($tipos,...$params); $q->execute(); $juegos=$q->get_result()->fetch_all(MYSQLI_ASSOC);
-$categorias=$conexion->query("SELECT DISTINCT categoria FROM juegos ORDER BY categoria")->fetch_all(MYSQLI_COLUMN);
+$categorias=$conexion->query("SELECT DISTINCT categoria FROM juegos ORDER BY categoria")->fetch_all(MYSQLI_NUM);
 require __DIR__.'/includes/header.php';
 ?>
 <section class="container py-5"><p class="eyebrow">CATALOGO</p><h1>Explora videojuegos</h1><p class="text-secondary">Descubre juegos compartidos por la comunidad.</p>

@@ -37,7 +37,7 @@ function validar_csrf(): void {
         $token = $_POST['csrf'] ?? '';
         if (!is_string($token) || !hash_equals($_SESSION['csrf'] ?? '', $token)) {
             http_response_code(403);
-            exit('Solicitud no válida. Regresa e intentalo de nuevo.');
+            exit('Solicitud no valida. Regresa e intentalo de nuevo.');
         }
     }
 }

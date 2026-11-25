@@ -57,7 +57,7 @@ require_once __DIR__ . '/includes/header.php';
                     <img
                         src="img/creadores.png"
                         alt="Creadores de PublicArcade"
-                        class="img-fluid rounded mb-4"
+                        class="img-fluid"
                         style="width:100%; max-height:550px; object-fit:cover;"
                     >
 
